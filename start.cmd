@@ -1,6 +1,6 @@
 mvn install
 
-cd weixin
+cd cangk
 mvn spring-boot:start
 
 cd ..\subscribe

@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-cd weixin
+cd cangk
 mvn spring-boot:stop
 
 cd ../subscribe
