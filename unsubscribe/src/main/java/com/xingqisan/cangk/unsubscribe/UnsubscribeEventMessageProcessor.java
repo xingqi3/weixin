@@ -1,5 +1,10 @@
 package com.xingqisan.cangk.unsubscribe;
 
+import java.util.Date;
+
+import javax.transaction.Transactional;
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +14,6 @@ import com.xingqisan.commons.domain.User;
 import com.xingqisan.commons.domain.event.EventInMessage;
 import com.xingqisan.commons.processors.EventMessageProcessor;
 import com.xingqisan.commons.repository.UserRepository;
-
-import java.util.Date;
-
-import javax.transaction.Transactional;
 
 @Service("unsubscribeMessageProcessor")
 public class UnsubscribeEventMessageProcessor implements EventMessageProcessor {
