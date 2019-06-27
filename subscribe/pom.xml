@@ -94,7 +94,7 @@
 					<executable>true</executable>
 					<!-- fork为true的时候 -->				
 					<fork>true</fork>					
-					<jmxPort>9102</jmxPort>
+					<jmxPort>9101</jmxPort>
 				</configuration>
 			</plugin>
 		</plugins>
