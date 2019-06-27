@@ -1,21 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	 
+	 <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xingqisan</groupId>
     <artifactId>weixin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>cangk</artifactId>
-  
-  <dependencies>
-  
-  		<dependency>
-  		<groupId>${project.groupId}</groupId>
-  		<artifactId>commons</artifactId>
-  		<version>${project.version}</version>
-  	</dependency>
+  <artifactId>unsubscribe</artifactId>
+  	<dependencies>
 		<!-- JAXB的API，一般引入Spring、JPA相关的依赖以后，往往都会有 -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
@@ -52,11 +46,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
-	
- 		<dependency> 
- 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency> 
+		<!-- 自动配置Spring MVC -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.boot</groupId> -->
+<!-- 			<artifactId>spring-boot-starter-web</artifactId> -->
+<!-- 		</dependency> -->
 		<!-- 数据库驱动 -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -91,11 +85,17 @@
 			<!-- Spring Boot的Maven插件，用于在打包的时候把所有相关jar文件打包在一起 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>			
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<executable>true</executable>			
-					<fork>true</fork>	
-					<jmxPort>9100</jmxPort>
+					<!-- 可以打包成一个可执行jar文件 -->
+					<executable>true</executable>
+					<!-- fork为true的时候 -->
+					<!-- 将可以使用 mvn spring-boot:start 启动程序 -->
+					<!-- 并且可以使用 mvn spring-boot:stop 停止程序 -->
+					<fork>true</fork>
+					<!-- 每个fork出来的进程都会需要一个JMX端口，不能重复 -->
+					<!-- 建议：每个人使用一段的端口号，比如阿宝使用 9001~9099，小宝使用9100~9199 -->
+					<jmxPort>9102</jmxPort>
 				</configuration>
 			</plugin>
 		</plugins>
