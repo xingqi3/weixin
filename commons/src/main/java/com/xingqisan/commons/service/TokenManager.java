@@ -1,4 +1,4 @@
-package com.xingqisan.cangk.service;
+package com.xingqisan.commons.service;
 
 
 public interface TokenManager {

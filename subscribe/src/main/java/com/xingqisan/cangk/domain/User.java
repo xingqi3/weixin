@@ -1,4 +1,4 @@
-package com.xingqisan.commons.domain;
+package com.xingqisan.cangk.domain;
 
 
 import java.util.Date;
@@ -120,8 +120,8 @@ public class User {
 		return status;
 	}
 
-	public void setStatus(Status isSubscribe) {
-		this.status = isSubscribe;
+	public void setStatus(Status status) {
+		this.status = status;
 	}
 
 	public Date getSubTime() {

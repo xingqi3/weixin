@@ -25,5 +25,7 @@
 		<module>subscribe</module>
 		<module>commons</module>
 		<module>unsubscribe</module>
+		<module>self-menu</module>
+		<module>subscribe1</module>
 	</modules>
 </project>
