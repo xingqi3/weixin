@@ -30,7 +30,7 @@ public class LocationInMessage extends InMessage {
 	private String Label;
 
 	protected LocationInMessage(String type) {
-		super(type);
+		super.setMsgType(type);
 	}
 
 	public String getLocation_X() {
@@ -73,7 +73,7 @@ public class LocationInMessage extends InMessage {
 	public String toString() {
 		return "LocationInMessage [Location_X=" + Location_X + ", Location_Y=" + Location_Y + ", Scale=" + Scale
 				+ ", Label=" + Label + ", getToUserName()=" + getToUserName() + ", getFromUserName()="
-				+ getFromUserName() + ", getCreateType()=" + getCreateType() + ", getMsgType()=" + getMsgType()
+				+ getFromUserName() + ", getCreateType()=" + getMsgType() + ", getMsgType()=" + getMsgType()
 				+ ", getMsgId()=" + getMsgId() + "]";
 	}
 	

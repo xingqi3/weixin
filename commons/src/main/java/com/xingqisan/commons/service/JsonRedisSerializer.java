@@ -87,3 +87,4 @@ public class JsonRedisSerializer extends Jackson2JsonRedisSerializer<Object> {
 		this.objectMapper = objectMapper;
 	}
 }
+

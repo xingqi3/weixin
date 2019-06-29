@@ -23,7 +23,7 @@ public class EventInMessage extends InMessage{
 	@JsonProperty("EventKey")
 	private String eventKey;
 	public EventInMessage() {
-		super("event");
+		super.setMsgType(event);
 	}
 	public String getEvent() {
 		return event;
@@ -43,7 +43,7 @@ public class EventInMessage extends InMessage{
 	@Override
 	public String toString() {
 		return "EventInMessage [event=" + event + ", eventKey=" + eventKey + ", getToUserName()=" + getToUserName()
-				+ ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getCreateType()
+				+ ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getCreateTime()
 				+ ", getMsgType()=" + getMsgType() + ", getMsgId()=" + getMsgId() + "]";
 	}
 	

@@ -24,7 +24,7 @@ public class ShortvidoInMessage extends InMessage {
 	private String thumbMediaId;
 
 	protected ShortvidoInMessage(String type) {
-		super(type);
+		super.setMsgType(type);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -51,7 +51,7 @@ public class ShortvidoInMessage extends InMessage {
 	@Override
 	public String toString() {
 		return "ShortvidoInMessage [mediaId=" + mediaId + ", thumbMediaId=" + thumbMediaId + ", getToUserName()="
-				+ getToUserName() + ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getCreateType()
+				+ getToUserName() + ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getMsgType()
 				+ ", getMsgType()=" + getMsgType() + ", getMsgId()=" + getMsgId() + "]";
 	}
 	

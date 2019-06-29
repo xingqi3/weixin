@@ -16,7 +16,7 @@ public class LinkInMessage extends InMessage {
 	 */
 	private static final long serialVersionUID = 1L;
 	protected LinkInMessage(String type) {
-		super(type);
+		super.setMsgType(type);
 		// TODO 自动生成的构造函数存根
 	}
 	@XmlElement(name = "Title")
@@ -49,7 +49,7 @@ public class LinkInMessage extends InMessage {
 	@Override
 	public String toString() {
 		return "LinkInMessage [title=" + title + ", description=" + description + ", url=" + url + ", getToUserName()="
-				+ getToUserName() + ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getCreateType()
+				+ getToUserName() + ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getMsgType()
 				+ ", getMsgType()=" + getMsgType() + ", getMsgId()=" + getMsgId() + "]";
 	}
 	

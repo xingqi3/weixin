@@ -22,7 +22,7 @@ public class TextInMessage extends InMessage {
 	private String content;
 
 	public TextInMessage() {
-		super("text");
+		super.setMsgType("text");
 	}
 
 	public String getContent() {
@@ -33,12 +33,11 @@ public class TextInMessage extends InMessage {
 		this.content = content;
 	}
 
-	// 如果要打印一些有含义的信息出来必须要重写此方法
+	// 如果想要打印一些有含义的信息出来，必须要重写此方法，否则只能打印一个内存地址
 	@Override
 	public String toString() {
 		return "TextInMessage [content=" + content + ", getToUserName()=" + getToUserName() + ", getFromUserName()="
-				+ getFromUserName() + ", getCreateType()=" + getCreateType() + ", getMsgType()=" + getMsgType()
+				+ getFromUserName() + ", getCreateTime()=" + getCreateTime() + ", getMsgType()=" + getMsgType()
 				+ ", getMsgId()=" + getMsgId() + "]";
 	}
-
 }

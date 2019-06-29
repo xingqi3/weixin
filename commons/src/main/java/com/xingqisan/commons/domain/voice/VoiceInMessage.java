@@ -17,7 +17,7 @@ public class VoiceInMessage extends InMessage {
 	private String format;
 
 	protected VoiceInMessage(String type) {
-		super(type);
+		super.setMsgType(type);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -44,7 +44,7 @@ public class VoiceInMessage extends InMessage {
 	@Override
 	public String toString() {
 		return "VoiceInMessage [mediaId=" + mediaId + ", format=" + format + ", getToUserName()=" + getToUserName()
-				+ ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getCreateType()
+				+ ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getMsgType()
 				+ ", getMsgType()=" + getMsgType() + ", getMsgId()=" + getMsgId() + "]";
 	}
 	

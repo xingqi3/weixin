@@ -24,7 +24,7 @@ public class VideoInMessage extends InMessage {
 	private String thumbMediaId;
 
 	protected VideoInMessage(String type) {
-		super(type);
+		super.setMsgType(type);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -51,7 +51,7 @@ public class VideoInMessage extends InMessage {
 	@Override
 	public String toString() {
 		return "VideoInMessage [mediaId=" + mediaId + ", thumbMediaId=" + thumbMediaId + ", getToUserName()="
-				+ getToUserName() + ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getCreateType()
+				+ getToUserName() + ", getFromUserName()=" + getFromUserName() + ", getCreateType()=" + getMsgType()
 				+ ", getMsgType()=" + getMsgType() + ", getMsgId()=" + getMsgId() + "]";
 	}
 	
