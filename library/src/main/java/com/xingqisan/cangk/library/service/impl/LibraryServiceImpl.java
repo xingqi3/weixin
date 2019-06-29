@@ -24,8 +24,8 @@ public class LibraryServiceImpl implements LibraryService {
 	@Override
 	public Page<Book> search(String keyword, int pageNumber) {
 
-		// 创建分页条件，页码从外面（页面）传入，每页固定最多显示3条数据
-		Pageable pageable = PageRequest.of(pageNumber, 3);
+		// 创建分页条件，页码从外面（页面）传入，每页固定最多显示6条数据
+		Pageable pageable = PageRequest.of(pageNumber, 6);
 
 		Page<Book> page;
 		if (StringUtils.isEmpty(keyword)) {
@@ -104,18 +104,18 @@ public class LibraryServiceImpl implements LibraryService {
 				// 把找到的图书，从集合里面删除
 				.ifPresent(list.getBooks()::remove);
 
-//		Book book = null;
-//		// 循环所有的图书
-//		for (Book b : list.getBooks()) {
-//			// 过滤需要的图书
-//			if (b.getId().equals(id)) {
-//				// 找到需要的图书以后，跳出循环
-//				book = b;
-//				break;
-//			}
-//		}
-//		// 从集合里面删除图书
-//		list.getBooks().remove(book);
+		Book book = null;
+		// 循环所有的图书
+		for (Book b : list.getBooks()) {
+			// 过滤需要的图书
+		if (b.getId().equals(id)) {
+				// 找到需要的图书以后，跳出循环
+				book = b;
+				break;
+			}
+		}
+		// 从集合里面删除图书
+		list.getBooks().remove(book);
 	}
 
 }

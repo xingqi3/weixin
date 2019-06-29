@@ -56,6 +56,6 @@ public class DebitController {
 			// 从Session里面或名为debitList的对象，并且自动强制类型转换
 			@SessionAttribute("debitList") DebitList list) {
 		this.libraryService.remove(id, list);
-		return "redirect:/kemao_1/library/debit/list";
+		return "redirect:/sc/library/debit/list";
 	}
 }
