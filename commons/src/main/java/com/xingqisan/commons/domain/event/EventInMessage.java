@@ -2,9 +2,6 @@ package com.xingqisan.commons.domain.event;
 
 
 import javax.xml.bind.annotation.XmlElement;
-
-
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.xingqisan.commons.domain.InMessage;
 
