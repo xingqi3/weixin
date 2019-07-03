@@ -1,23 +1,21 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.xingqisan</groupId>
-    <artifactId>weixin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>unsubscribe</artifactId>
-  
-  <properties>
-		<!-- 基于Spring Boot项目可以使用java.version来指定JDK的版本号，可选的：1.8、9、10、11 -->
-		<!-- 11是目前最新的稳定版，下一个稳定版2年后发布 -->
-		<java.version>11</java.version>
-		<!-- 源代码的字符编码 -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- 报告文件的字符编码 -->
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.xingqisan</groupId>
+		<artifactId>weixin</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>unsubscribe</artifactId>
 
 	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>commons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
 		<!-- JAXB的API，一般引入Spring、JPA相关的依赖以后，往往都会有 -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
@@ -55,10 +53,10 @@
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 		<!-- 自动配置Spring MVC -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>org.springframework.boot</groupId> -->
-<!-- 			<artifactId>spring-boot-starter-web</artifactId> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-web</artifactId> -->
+		<!-- </dependency> -->
 		<!-- 数据库驱动 -->
 		<dependency>
 			<groupId>mysql</groupId>
