@@ -10,6 +10,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xingqisan.commons.config.EventListenerConfig;
 import com.xingqisan.commons.domain.event.EventInMessage;
