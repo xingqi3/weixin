@@ -1,5 +1,6 @@
 package com.xingqisan.commons.domain;
 
+
 import java.io.Serializable;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -41,7 +42,6 @@ public abstract class InMessage implements Serializable {
 	@JsonProperty("MsgId")
 	private Long msgId;
 
-
 	public String getToUserName() {
 		return toUserName;
 	}
@@ -82,4 +82,3 @@ public abstract class InMessage implements Serializable {
 		this.msgId = msgId;
 	}
 }
-

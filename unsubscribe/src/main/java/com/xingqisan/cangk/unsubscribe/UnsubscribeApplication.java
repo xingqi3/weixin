@@ -19,9 +19,9 @@ import com.xingqisan.commons.domain.event.EventInMessage;
 import com.xingqisan.commons.processors.EventMessageProcessor;
 
 @SpringBootApplication
-@ComponentScan("org.fkjava")
-@EnableJpaRepositories("org.fkjava")
-@EntityScan("org.fkjava")
+@ComponentScan("com.xingqisan")
+@EnableJpaRepositories("com.xingqisan")
+@EntityScan("com.xingqisan")
 public class UnsubscribeApplication implements //
 		EventListenerConfig,
 		// 得到Spring的容器

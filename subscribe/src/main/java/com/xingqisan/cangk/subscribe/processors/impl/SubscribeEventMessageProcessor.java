@@ -1,5 +1,4 @@
-package com.xingqisan.cangk.processors.impl;
-
+package com.xingqisan.cangk.subscribe.processors.impl;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

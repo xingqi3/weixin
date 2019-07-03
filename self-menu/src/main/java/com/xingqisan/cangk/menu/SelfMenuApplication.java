@@ -14,12 +14,11 @@ import com.xingqisan.commons.domain.event.EventInMessage;
 public class SelfMenuApplication implements EventListenerConfig {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SelfMenuApplication.class, args);
 	}
 
 	@Override
 	public void handle(EventInMessage msg) {
-		// 目前此模块不处理任何消息，所以这里留空即可
 	}
 }
-

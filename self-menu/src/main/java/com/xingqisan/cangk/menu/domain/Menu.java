@@ -1,6 +1,7 @@
 package com.xingqisan.cangk.menu.domain;
 
 
+
 import java.util.LinkedList;
 import java.util.List;
 

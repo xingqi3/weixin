@@ -1,4 +1,4 @@
-package com.xingqisan.cangk;
+package com.xingqisan.cangk.subscribe;
 
 
 import org.slf4j.Logger;
