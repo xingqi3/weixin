@@ -1,6 +1,4 @@
 package com.xingqisan.cangk.unsubscribe;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
@@ -12,11 +10,11 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xingqisan.commons.config.EventListenerConfig;
 import com.xingqisan.commons.domain.event.EventInMessage;
 import com.xingqisan.commons.processors.EventMessageProcessor;
+
 
 @SpringBootApplication
 @ComponentScan("com.xingqisan")
