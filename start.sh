@@ -2,7 +2,7 @@
 
 mvn install
 
-cd cangk
+cd ../cangk
 mvn spring-boot:start
 
 cd ../subscribe
