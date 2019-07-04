@@ -10,6 +10,10 @@ mvn spring-boot:stop
 cd ../unsubscribe
 mvn spring-boot:stop
 
-cd ../self_menu
+cd ../self-menu
 mvn spring-boot:stop
+
+cd ../library
+mvn spring-boot:stop
+
 

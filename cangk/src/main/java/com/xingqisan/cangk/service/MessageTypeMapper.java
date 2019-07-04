@@ -1,8 +1,6 @@
 package com.xingqisan.cangk.service;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
 import com.xingqisan.commons.domain.InMessage;
 import com.xingqisan.commons.domain.Image.ImageInMessage;
 import com.xingqisan.commons.domain.event.EventInMessage;
@@ -18,16 +16,13 @@ public class MessageTypeMapper {
 	static {
 		typeMap.put("text", TextInMessage.class);
 		typeMap.put("image", ImageInMessage.class);
-
 		typeMap.put("vioce", TextInMessage.class);
 		typeMap.put("video", TextInMessage.class);
 		typeMap.put("location", TextInMessage.class);
 		typeMap.put("shortvideo", TextInMessage.class);
 		typeMap.put("link", TextInMessage.class);
-
 		typeMap.put("event", EventInMessage.class);
 	}
-
 	// 通过消息类型获取对应的类
 	@SuppressWarnings("unchecked")
 	public static <T extends InMessage> Class<T> getClass(String type) {

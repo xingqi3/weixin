@@ -55,7 +55,7 @@ public class MessageReceiverController {
 
 		LOG.debug("转换得到的消息对象 \n{}\n", inMessage.toString());
 
-		inMessageTemplate.convertAndSend("kemao_1_" + inMessage.getMsgType(), inMessage);
+		inMessageTemplate.convertAndSend("sc" + inMessage.getMsgType(), inMessage);
 
 		return "success";
 	}

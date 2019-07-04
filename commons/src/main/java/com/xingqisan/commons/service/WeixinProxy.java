@@ -1,7 +1,5 @@
 package com.xingqisan.commons.service;
 
-
-
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpClient.Version;

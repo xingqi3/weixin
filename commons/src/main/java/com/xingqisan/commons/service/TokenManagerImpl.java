@@ -22,14 +22,12 @@ import com.xingqisan.commons.domain.ResponseMessage;
 import com.xingqisan.commons.domain.ResponseToken;
 @Service
 public class TokenManagerImpl implements TokenManager {
-
 	private static final Logger LOG = LoggerFactory.getLogger(TokenManagerImpl.class);
 	@Autowired
 	private ObjectMapper objectMapper;
 	@Autowired
 	@Qualifier("tokenRedisTemplate")
 	private RedisTemplate<String, ResponseToken> tokenRedisTemplate;
-
 	@Override
 	public String getToken(String account) {
 		BoundValueOperations<String, ResponseToken> ops = tokenRedisTemplate.boundValueOps("weixin_access_token");
